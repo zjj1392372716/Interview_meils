@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>内容不固定，文字居中显示</title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0px;
+			}
+			.wrap{width: 60%;}
+			.content{
+				display: table;
+				width: 100%;
+				border: 1px solid #CCCCCC;
+			}
+			.img-box{
+				display: table-cell;
+        *display: inline-block;
+				*zoom: 1; 
+				width: 100px;
+				vertical-align: middle;
+				text-align: center;
+				background: #979797;
+			}
+			.text-box{
+				margin-left: 10px;
+				padding: 10px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="content">
+				<div class="img-box"><img width="70" src="http://img4.duitang.com/uploads/item/201402/22/20140222113302_fCUyc.thumb.700_0.jpeg"/></div>
+				<div class="text-box">
+					<span>左侧的box的高度始终跟随右侧的box的高度变化而变化</span>
+					<p>案例不对右侧的box设置display:table-cell，只对左侧设置，所以就会出现左侧跟随右侧高度变化而变化。</p>
+          <p>如果要实现不管两个box哪个高度产生变化另一个就跟随，只需要把右侧的box也设置成display:table－cell就可以实现了。</p>
+					<p>如果要实现不管两个box哪个高度产生变化另一个就跟随，只需要把右侧的box也设置成display:table－cell就可以实现了。</p>
+					<p>如果要实现不管两个box哪个高度产生变化另一个就跟随，只需要把右侧的box也设置成display:table－cell就可以实现了。</p>
+					<p>如果要实现不管两个box哪个高度产生变化另一个就跟随，只需要把右侧的box也设置成display:table－cell就可以实现了。</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>内容不固定，文字居中显示</title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0px;
+			}
+			body{
+				font-family: "微软雅黑", arial;
+				font-size: 14px;
+			}
+			/*两端对齐*/
+			.wrap{width: 80%;}
+			.content{
+				display: table;
+				width: 100%;
+				padding: 20px 0px;
+			}
+			.left-box{
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+				margin-right: 10px;
+        background: #CCCCCC;
+			}
+			.right-box{
+				display: table-cell;
+				/* *display: inline-block;
+				*zoom: 1;
+				padding: 10px;
+				border: 1px solid #CCCCCC;
+				margin-right: 10px; */
+				vertical-align: top;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="content">
+				<div class="left-box">
+					<img width="70" src="http://img4.duitang.com/uploads/item/201402/22/20140222113302_fCUyc.thumb.700_0.jpeg"/>
+				</div>
+				<div class="right-box">
+					<p>移动端布局因为有display:box这等属性，所以table-cell相对就排不上什么大用场，
+						不过在移动端你要用table-cell也不是不可以，根据自己对属性的理解去使用就可以了。</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

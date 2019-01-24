@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>内容不固定，文字居中显示</title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0px;
+			}
+			/*两端对齐*/
+			.content{
+				display: table;
+				width: 100%;
+				min-width: 320px;
+				max-width: 1000px;
+				padding: 15px 5px;
+				margin: 10px auto;
+				border: 1px solid #CCCCCC;
+			}
+			.content-box{
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				text-align: center;
+				font-size: 40px;
+				border: 1px solid #337AB7;
+			}
+			.left,.right{
+				display: table-cell;
+				*display: inline-block;
+				zoom: 1;
+			}
+			.right{
+				text-align: right;
+				background: lightgray;
+			}
+			.left{
+				text-align: left;
+				background: lavender;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<p>元素两端对齐</p>
+			<div class="content">
+				<div class="left">
+					<div class="content-box">B box</div>
+				</div>
+				<div class="right">
+					<div class="content-box">A box</div>
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>
